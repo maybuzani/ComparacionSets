@@ -319,6 +319,7 @@ TreeSet<String> tecnologias =
 
 **Pregunta:** ¿Qué ventaja proporciona definir el criterio de
 ordenamiento directamente en la colección?
+Mantiene los datos ordenados todo el tiempo y ubica cada nuevo elemento en su posicion correcta en tiempo
 
 ## 15. Experimento de desempeño
 
@@ -357,12 +358,12 @@ public class BenchmarkSets {
 
 Ejecute al menos tres veces:
 
- | Ejecución|     HashSet|   TreeSet|
+ | Ejecución| HashSet | TreeSet |
 |-----------|---------|---------|
-|  1     |  0   |0|           
- | 2     |  0  |0|            
-|  3     | 0 |0|              
- | Promedio |   0    | 0    |     
+|  1     | 142.324 | 269.670 |           
+ | 2     | 134.331 | 270.634 |            
+|  3     | 136.119 | 272.977 |              
+ | Promedio | 137.591 | 271.094 |     
 
 Después mida búsquedas mediante `contains()` y eliminaciones. Compare
 los resultados con las complejidades esperadas. Los tiempos con
